@@ -9,7 +9,7 @@ import {
   IconArrowUp,
   IconExternalLink,
 } from "@tabler/icons-react";
-import footerLinks from "../LandingPage/Data/footerLinks";
+import footerLinks from "../Landingpage/Data/FooterLinks";
 import owlLogo from "../assets/owl.png";
 
 const Footer = () => {
