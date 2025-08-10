@@ -37,10 +37,10 @@ const ApplyJob = () => {
 
         // Try multiple API endpoints similar to FindJob component
         const possibleUrls = [
-          `http://localhost:8080/jobs/${jobId}`,
+          `https://jobluubackend.onrender.com/jobs/${jobId}`,
           `/api/jobs/${jobId}`,
           `/jobs/${jobId}`,
-          `http://localhost:8080/api/jobs/${jobId}`
+          `https://jobluubackend.onrender.com/api/jobs/${jobId}`
         ];
 
         let response;
