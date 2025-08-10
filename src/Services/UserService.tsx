@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const base_url = "http://localhost:8080/api/users/";
+const base_url = "https://jobluubackend.onrender.com/api/users/";
 
 // Configure axios defaults
 axios.defaults.headers.common['Content-Type'] = 'application/json';
