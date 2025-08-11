@@ -27,17 +27,17 @@ interface Notification {
 const getApiBaseUrl = (): string => {
   // For Vite-based React apps
   if (typeof import.meta !== 'undefined' && import.meta.env) {
-    return import.meta.env.VITE_API_URL || 'http://localhost:8080';
+    return import.meta.env.VITE_API_URL || 'https://jobluubackend.onrender.com';
   }
   
   // For Create React App
   if (typeof process !== 'undefined' && process.env) {
-    return process.env.REACT_APP_API_URL || 'http://localhost:8080';
+    return process.env.REACT_APP_API_URL || 'https://jobluubackend.onrender.com';
   }
   
   // Fallback - construct from current origin
   const origin = window.location.origin;
-  return origin.includes('localhost') ? 'http://localhost:8080' : origin;
+  return origin.includes('localhost') ? 'https://jobluubackend.onrender.com' : origin;
 };
 
 const API_BASE_URL = getApiBaseUrl();
