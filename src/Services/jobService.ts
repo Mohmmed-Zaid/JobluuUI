@@ -66,7 +66,7 @@ const getApiBaseUrl = () => {
   if (typeof window !== 'undefined' && (window as any).REACT_APP_API_BASE_URL) {
     return (window as any).REACT_APP_API_BASE_URL;
   }
-  return 'http://localhost:8080';
+  return 'https://jobluubackend.onrender.com';
 };
 
 class JobService {
