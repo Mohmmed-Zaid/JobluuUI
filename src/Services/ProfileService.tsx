@@ -42,7 +42,7 @@ interface ProfileDto {
 }
 
 // API base URL - update this to match your backend
-const base_url = "http://localhost:8080/api/profiles";
+const base_url = "https://jobluubackend.onrender.com/api/profiles";
 
 // Configure axios defaults
 axios.defaults.headers.common['Content-Type'] = 'application/json';
