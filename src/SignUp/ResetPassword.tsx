@@ -40,7 +40,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({ opened, close }) => {
     showMessage("Sending OTP to your email...", "info");
 
     try {
-      const response = await fetch(`http://localhost:8080/api/users/sendOTP/${email}`, {
+      const response = await fetch(`https://jobluubackend.onrender.com/api/users/sendOTP/${email}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -151,7 +151,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({ opened, close }) => {
     showMessage("Verifying OTP...", "info");
 
     try {
-      const response = await fetch(`http://localhost:8080/api/users/verifyOtp/${email}/${otpString}`);
+      const response = await fetch(`https://jobluubackend.onrender.com/api/users/verifyOtp/${email}/${otpString}`);
       const data = await response.json();
       
       if (data.success || response.ok) {
@@ -198,7 +198,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({ opened, close }) => {
     showMessage("Updating password...", "info");
 
     try {
-      const response = await fetch(`http://localhost:8080/api/users/changePass`, {
+      const response = await fetch(`https://jobluubackend.onrender.com/api/users/changePass`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -244,7 +244,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({ opened, close }) => {
     showMessage("Resending OTP...", "info");
 
     try {
-      const response = await fetch(`http://localhost:8080/api/users/sendOTP/${email}`, {
+      const response = await fetch(`https://jobluubackend.onrender.com/api/users/sendOTP/${email}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
