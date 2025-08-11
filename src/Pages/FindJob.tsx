@@ -35,8 +35,8 @@ const FindJob = () => {
   // Use the JobContext
   const { jobs, setJobs, loading, setLoading } = useJobs();
   
-  // API Configuration - Update this with your backend URL
-  const API_BASE_URL = 'http://localhost:8080';
+  
+  const API_BASE_URL = 'https://jobluubackend.onrender.com';
   
   const [filteredJobs, setFilteredJobs] = useState<Job[]>([]);
   const [error, setError] = useState<string | null>(null);
