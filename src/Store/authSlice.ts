@@ -43,7 +43,7 @@ export const autoLogin = createAsyncThunk(
       }
 
       // Validate token with backend
-      const response = await fetch('http://localhost:8080/api/auth/validate', {
+      const response = await fetch('https://jobluubackend.onrender.com/api/auth/validate', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -53,7 +53,7 @@ export const autoLogin = createAsyncThunk(
 
       if (!response.ok) {
         // Token invalid, try refresh
-        const refreshResponse = await fetch('http://localhost:8080/api/auth/refresh', {
+        const refreshResponse = await fetch('https://jobluubackend.onrender.com/api/auth/refresh', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -100,7 +100,7 @@ export const loginUser = createAsyncThunk(
   'auth/login',
   async (credentials: { email: string; password: string }, { rejectWithValue }) => {
     try {
-      const response = await fetch('http://localhost:8080/api/auth/login', {
+      const response = await fetch('https://jobluubackend.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
