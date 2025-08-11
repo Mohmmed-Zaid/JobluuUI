@@ -13,7 +13,7 @@ const getConfig = (): Config => {
 
   if (isDevelopment) {
     return {
-      apiUrl: 'http://localhost:8080/api',
+      apiUrl: 'https://jobluubackend.onrender.com/api',
       environment: 'development',
       googleClientId: '415838507936-um9s5pbvbubp1hs2k84lvjmsph4e38m3.apps.googleusercontent.com'
     };
@@ -21,16 +21,16 @@ const getConfig = (): Config => {
 
   if (isStaging) {
     return {
-      apiUrl: 'https://your-staging-api.com/api',
+      apiUrl: 'https://jobluubackend.onrender.com/api',
       environment: 'staging',
       googleClientId: 'STAGING_CLIENT_ID'
     };
   }
 
   return {
-    apiUrl: 'https://your-production-api.com/api',
+    apiUrl: 'https://jobluubackend.onrender.com/api',
     environment: 'production',
-    googleClientId: 'PRODUCTION_CLIENT_ID'
+    googleClientId: '415838507936-um9s5pbvbubp1hs2k84lvjmsph4e38m3.apps.googleusercontent.com'
   };
 };
 
