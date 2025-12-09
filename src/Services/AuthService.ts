@@ -1,7 +1,7 @@
 // Services/AuthService.ts
 import { AppDispatch } from '../Store';
 import { loginUser, loginStart, loginSuccess, loginFailure, logout, setUser } from '../Store/authSlice';
-import { config } from '../config/config'; // Adjust path as needed
+import { config } from '../config/config'; 
 
 export interface LoginCredentials {
   email: string;
