@@ -1,24 +1,23 @@
 import React from "react";
 import {
-  IconBuildingFactory2, // Represents company/factory
-  IconCalendar,         // Represents dates
-  IconMapPin,           // Represents location
-  IconAward,            // Represents achievements
-  IconCode,             // Represents technologies
+  IconBuildingFactory2, 
+  IconCalendar,         
+  IconMapPin,           
+  IconAward,            
+  IconCode,             
 } from "@tabler/icons-react";
 
-// Assuming Header and Footer are imported externally, similar to PostedJobPage
 import Header from "../Header/Header";
 import Footer from "../footer/Footer";
 
-// Define the interface for a single job history entry
+// Define Single Job HIStory
 interface JobHistoryEntry {
   id: number;
   title: string;
   company: string;
   location: string;
   startDate: string;
-  endDate: string; // Can be a date string or "Present"
+  endDate: string; 
   description: string;
   achievements: string[];
   technologies: string[];
